@@ -22,8 +22,10 @@ public class insert extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 //		PrintWriter out=response.getWriter();
+		System.out.println("Test Statement");
 		String fname = request.getParameter("fname");
 		String lname = request.getParameter("lname");
+		
 		String mno = request.getParameter("mno");
 	try{	
 		Class.forName("com.mysql.jdbc.Driver");
@@ -38,7 +40,7 @@ public class insert extends HttpServlet {
 		ps.execute();
 //		 out.println("Data Inserted");
 		
-		
+		System.out.println("Test Statementw");
 	}
 	catch(Exception e){
 		e.printStackTrace();
